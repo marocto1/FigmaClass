@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John — Creative Technologist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#21243D',
+              accent: '#FF6464',
+              badge: '#142850',
+              lightBlue: '#EDF7FA'
+            },
+            boxShadow: {
+              card: '0 4px 12px rgba(0,0,0,0.06)'
+            },
+            fontFamily: {
+              heebo: ['Heebo','ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Ubuntu','Cantarell','Noto Sans','Helvetica Neue','Arial','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji']
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body{font-family: Heebo, ui-sans-serif, system-ui;}
+    </style>
+  </head>
+  <body class="text-primary bg-white">
+    <header class="container mx-auto max-w-5xl px-5 pt-6 md:pt-10">
+      <nav class="flex items-center">
+        <div class="ml-auto flex items-center gap-8">
+          <ul class="hidden md:flex items-center gap-10 text-[20px] font-medium">
+            <li><a class="hover:text-accent transition" href="#">Works</a></li>
+            <li><a class="hover:text-accent transition" href="#">Blog</a></li>
+            <li><a class="hover:text-accent transition" href="#">Contact</a></li>
+          </ul>
+          <button class="md:hidden p-2 -mr-2" aria-label="Открыть меню">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <section class="mt-8 md:mt-16 grid md:grid-cols-2 gap-10 items-center">
+        <div class="order-2 md:order-1 text-center md:text-left">
+          <h1 class="text-[32px] leading-[40px] md:text-[44px] md:leading-[60px] font-black">
+            Hi, I am Marlon,<br/>Creative Technologist
+          </h1>
+          <p class="mt-6 text-[16px] leading-7 max-w-xl mx-auto md:mx-0">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet.
+          </p><br>
+        <a href="resume.pdf" download class="inline-block px-6 py-3 rounded shadow font-semibold text-white transition transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2"
+          style="background-color: rgba(255,100,100,1); box-shadow: 0 6px 14px rgba(255,100,100,0.18);">
+          Download Resume
+        </a>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center md:justify-end">
+          <img
+            class="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover ring-8 ring-[#EDEEEF]"
+            src="images/photo_2025-08-26_02-13-24.jpg"
+            alt="John — portrait"
+          />
+        </div>
+      </section>
+    </header>
+    <section class="bg-lightBlue mt-12">
+      <div class="container mx-auto max-w-5xl px-5 py-10 md:py-14">
+        <div class="flex items-center justify-between mb-6 md:mb-8">
+          <h2 class="text-[22px] font-medium">Recent posts</h2>
+          <a class="hidden md:inline text-sky-600 text-sm hover:opacity-80" href="#">View all</a>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <article class="post-card bg-white rounded-lg p-6 md:p-8 shadow-card">
+            <h3 class="text-[26px] font-bold leading-tight">
+              Making a design system from scratch
+            </h3>
+            <div class="mt-4 text-[14px] text-gray-500 flex items-center">
+              <span>12 Feb 2025</span>
+              <span class="mx-4 opacity-60">|</span>
+              <span>Design, Pattern</span>
+            </div>
+            <p class="mt-4 leading-7">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+              sunt nostrud amet.
+            </p>
+          </article>
+          <article class="post-card bg-white rounded-lg p-6 md:p-8 shadow-card">
+            <h3 class="text-[26px] font-bold leading-tight">
+              Creating pixel perfect icons in Figma
+            </h3>
+            <div class="mt-4 text-[14px] text-gray-500 flex items-center">
+              <span>12 Feb 2025</span>
+              <span class="mx-4 opacity-60">|</span>
+              <span>Figma, Icon Design</span>
+            </div>
+            <p class="mt-4 leading-7">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+              sunt nostrud amet.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto max-w-5xl px-5 py-10 md:py-14">
+      <h2 class="text-[22px] font-medium mb-6">Featured works</h2>
+      <article class="grid md:grid-cols-[246px_1fr] gap-6 pb-8 mb-8 border-b">
+        <img class="w-full h-[180px] md:h-[180px] object-cover rounded-[6px]" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop" alt="Designing Dashboards">
+        <div>
+          <a href="#" class="text-[30px] font-bold hover:text-accent transition">Designing Dashboards</a>
+          <div class="flex items-center gap-4 mt-3">
+            <span class="badge">2025</span>
+            <span class="text-gray-500">Dashboard</span>
+          </div>
+          <p class="mt-4 leading-7">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+      </article>
+      <article class="grid md:grid-cols-[246px_1fr] gap-6 pb-8 mb-8 border-b">
+        <img class="w-full h-[180px] md:h-[180px] object-cover rounded-[6px]" src="images/Rectangle 32.png" alt="Vibrant Portraits of 2025">
+        <div>
+          <a href="#" class="text-[30px] font-bold hover:text-accent transition">Vibrant Portraits of 2025</a>
+          <div class="flex items-center gap-4 mt-3">
+            <span class="badge">2025</span>
+            <span class="text-gray-500">Illustration</span>
+          </div>
+          <p class="mt-4 leading-7">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet. Velit officia consequat duis enim velit mollit.
+          </p>
+        </div>
+      </article>
+      <article class="grid md:grid-cols-[246px_1fr] gap-6 pb-8 mb-8 border-b">
+        <img class="w-full h-[180px] md:h-[180px] object-cover rounded-[6px]" src="https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=600&auto=format&fit=crop" alt="36 Days of Malayalam type">
+        <div>
+          <a href="#" class="text-[30px] font-bold hover:text-accent transition">36 Days of Malayalam type</a>
+          <div class="flex items-center gap-4 mt-3">
+            <span class="badge">2025</span>
+            <span class="text-gray-500">Typography</span>
+          </div>
+          <p class="mt-4 leading-7">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet.
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer class="py-10">
+      <div class="container mx-auto max-w-5xl px-5">
+        <div class="flex items-center justify-center gap-8 mb-4">
+          <a aria-label="Instagram" href="#" class="hover:opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
+            </svg>
+          </a>
+          <a aria-label="Twitter" href="#" class="hover:opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.162 5.656c-.77.34-1.597.57-2.46.674a4.287 4.287 0 001.887-2.367 8.594 8.594 0 01-2.721 1.04 4.276 4.276 0 00-7.287 3.9A12.143 12.143 0 013.151 4.67a4.274 4.274 0 001.323 5.705 4.246 4.246 0 01-1.937-.535v.054a4.277 4.277 0 003.432 4.19 4.29 4.29 0 01-1.932.073 4.279 4.279 0 003.995 2.97A8.57 8.57 0 012 19.542a12.087 12.087 0 006.56 1.923c7.873 0 12.18-6.523 12.18-12.18 0-.186-.004-.372-.013-.556a8.701 8.701 0 002.135-2.22z"/>
+            </svg>
+          </a>
+          <a aria-label="LinkedIn" href="#" class="hover:opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3A2.94 2.94 0 0122 6v12a2.94 2.94 0 01-3 3H5a2.94 2.94 0 01-3-3V6a2.94 2.94 0 013-3h14zM8.338 18v-7.338H6V18h2.338zM7.169 9.984a1.337 1.337 0 110-2.675 1.337 1.337 0 010 2.675zM18 18v-3.887c0-2.081-1.11-3.048-2.593-3.048-1.195 0-1.73.657-2.03 1.12v-0.959H10.8c.03.64 0 7.774 0 7.774H13.2v-4.346c0-.232.017-.463.085-.63.185-.463.61-.943 1.322-.943 0 0 1.113 0 1.113 1.372V18H18z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="text-center text-sm text-gray-500">Copyright ©2025 All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
